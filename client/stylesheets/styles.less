@@ -1,0 +1,42 @@
+// Import Bootstrap
+ @import 'variables';
+
+// sentiments
+
+.sentiment{
+    margin: 1em 0 1em 0;
+
+    .gauge-group{
+        
+        width: 100%;
+        clear: both;
+
+        .positive, .negative{
+            float: left;
+            width: 49.5%;
+        }
+
+        .gauge{
+            width: 100%;
+            float: left;
+        }
+    }
+
+    .btn{
+        font-size: 2em;
+    }
+}
+
+// footer
+
+.footer{
+	padding: 20px 0;
+	color: @gray-dark;
+	text-align: center;
+	background-color: @gray-lighter;
+	border-top: 1px solid @gray-light;
+
+	p{
+		margin: 0;
+	}
+}

@@ -1,0 +1,15 @@
+<template name="eventTemplate">
+    <form class="row">
+        <div class="col-lg-4">
+        	<input type="text" name="text" class="form-control" placeholder="Sentiment name (optional)" />
+        </div>
+        <div class="col-lg-2">
+            <button type="submit" class="new-sentiment btn btn-info btn-s">New Sentiment</button>
+        </div>
+    </form>
+
+    {{#each sentimentList}}
+        {{> sentiment}}
+    {{/each}}
+
+</template>

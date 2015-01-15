@@ -1,0 +1,81 @@
+<template name="header">
+    <div class="bs-component">
+      <div class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Plus1</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Active</a></li>
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Dropdown header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <!-- <form class="navbar-form navbar-left">
+            <input type="text" class="form-control col-lg-8" placeholder="Search">
+          </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+                <li><a class="username" href="#">Logged in as {{currentUser.username}}</a></li>
+                <li><a href="/admin/events">Admin</a></li>
+            {{else}}
+                <li><a class="disabled" href="#">Hello, Guest</a></li>
+            {{/if}}
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="center aligned {{isActive}} header-wrapper">
+        <h1 class="huge center aligned ui header">
+            {{constant 'name'}}
+
+        </h1>
+        <button class="basic ui resize icon button"><i class="{{iconClass}} icon"></i></button>
+
+        {{#if showLogin}}
+        <div class="login-wrapper {{animateClass}} animated">
+            {{#if currentUser}}
+            <div class="actions-wrapper">
+                {{#if currentUser.username}}
+                <div class="hello">Hi {{currentUser.username}}!</div>
+                {{/if}}
+                <div class="ui fluid purple log-out button">
+                    <i class="sign out icon"></i>
+                    Log out
+                </div>
+            </div>
+            {{else}}
+            {{> atForm }}
+            {{/if}}
+        </div>
+        {{/if}}
+    </div> -->
+</template>
+

@@ -1,0 +1,17 @@
+<template name="sentiment">
+    <div class="sentiment" id="sentiment-{{_id}}">
+	    <h2>{{title}}</h2>
+        <div class="gauge-group">
+            <div class="positive">
+                <div class="gauge" id="plus-one-gauge-{{_id}}"></div>
+            </div>
+            <div class="negative">
+                <div class="gauge" id="minus-one-gauge-{{_id}}"></div>
+            </div>
+        </div>
+        
+	    <button type="button" class="btn btn-lg btn-success plus-one {{plusOneButtonClass}}">+ 1</button>
+        <button type="button" class="btn btn-lg btn-danger minus-one {{plusOneButtonClass}}">- 1</button>
+	    <button type="button" class="btn btn-lg btn-primary reset">Reset</button>
+	</div>
+</template>
