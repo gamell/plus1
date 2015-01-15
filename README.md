@@ -3,7 +3,7 @@ Proof of concept of a system for instant, distributed feedback
 
 # requirements
 
-- meteor (http://meteor.com)
+- [meteor](http://meteor.com)
 
 To install meteor run:
 
